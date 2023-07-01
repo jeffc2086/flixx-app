@@ -111,7 +111,7 @@ async function displayMovieDetails() {
                         }
                     </div>
                     <div>
-                    <h2${movie.title}</h2>
+                    <h2>${movie.title}</h2>
                     <p>
                         <i class="fas fa-star text-primary"></i>
                          ${movie.vote_average.toFixed(1)} / 10
@@ -177,7 +177,7 @@ async function displayShowDetails() {
                         }
                     </div>
                     <div>
-                    <h2${show.name}</h2>
+                    <h2>${show.name}</h2>
                     <p>
                         <i class="fas fa-star text-primary"></i>
                          ${show.vote_average.toFixed(1)} / 10
