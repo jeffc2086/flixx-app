@@ -85,8 +85,9 @@ async function displayMovieDetails() {
     // console.log(movieId);
     
     const movie = await fetchAPIData(`movie/${movieId}`);
-    // const movie = await fetchAPIData(`movie/${movieId}/videos`);
-    // const movie = await fetchAPIData(`find/${movieId}`);
+    
+    const releaseDate = movie.release_date;
+    const formattedDate = new Date(releaseDate).toLocaleDateString();
 
     // console.log(movie);
 
@@ -115,7 +116,7 @@ async function displayMovieDetails() {
                         <i class="fas fa-star text-primary"></i>
                          ${movie.vote_average.toFixed(1)} / 10
                     </p>
-                    <p class="text-muted">Release Date: ${movie.release_date}</p>
+                    <p class="text-muted">Release Date: ${formattedDate}</p>
                     <p>
                         ${movie.overview}
                     </p>
@@ -151,6 +152,9 @@ async function displayShowDetails() {
     
     const show = await fetchAPIData(`tv/${showId}`);
 
+    const lastAirDate = show.last_air_date;
+    const formattedDate = new Date(lastAirDate).toLocaleDateString();
+
     // console.log(show);
 
     // Overlay for BG image
@@ -178,7 +182,7 @@ async function displayShowDetails() {
                         <i class="fas fa-star text-primary"></i>
                          ${show.vote_average.toFixed(1)} / 10
                     </p>
-                    <p class="text-muted">Last Air Date: ${show.last_air_date}</p>
+                    <p class="text-muted">Last Air Date: ${formattedDate}</p>
                     <p>
                         ${show.overview}
                     </p>
