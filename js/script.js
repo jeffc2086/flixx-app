@@ -89,7 +89,7 @@ async function displayMovieDetails() {
     const releaseDate = movie.release_date;
     const formattedDate = new Date(releaseDate).toLocaleDateString();
 
-    // console.log(movie);
+    console.log(movie);
 
     // Overlay for BG image
     displayBGImage('movie', movie.backdrop_path);

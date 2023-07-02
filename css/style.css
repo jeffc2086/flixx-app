@@ -227,8 +227,13 @@ section h2 {
     display: flex;
     flex-direction:column;
   }
+  .details-top > div:first-of-type {
+    display: flex;
+    justify-content: center;
+  }
   .details-top img {
     margin-right: 0 !important;
+    max-width: 90%;
   }
 }
 
@@ -248,6 +253,7 @@ section h2 {
 }
 
 .details-bottom {
+  margin-top: 150px;
 }
 
 .details-bottom li {
