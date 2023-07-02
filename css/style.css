@@ -265,8 +265,9 @@ section h2 {
 
 /* Search */
 .search {
-  padding: 60px;
+  /* padding: 60px; */
   margin-bottom: 40px;
+  padding: 60px 20px;
 }
 
 .search .container {
